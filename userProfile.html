@@ -79,25 +79,32 @@
 </head>
 
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
 
-<div id="main">
-  <button class="openbtn" onclick="openNav()">☰</button>  
-</div>
 
 
 <body style="min-height: 100%;">
+
+
+
+
 
     <header class="header">
         <div class="overlay has-fade"></div>
     
         <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+
+          <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>  
+
             <a href="/" class="header__logo">
               <img src="images/logo.svg" alt="Easybank" />
             </a>
@@ -134,7 +141,7 @@
 
 
 
-      <footer class="footer">
+      <footer id="footer_id_up" class="footer">
         <div class="container">
     
             <a class="footer__logo" href="#">
@@ -187,12 +194,14 @@
         function openNav() {
           document.getElementById("mySidebar").style.width = "250px";
           document.getElementById("main").style.marginLeft = "250px";
+          document.getElementById("footer_id_up").style.marginLeft = "250px";
         }
 
         function closeNav() {
           document.getElementById("mySidebar").style.width = "0";
           document.getElementById("main").style.marginLeft= "0";
-}
+          document.getElementById("footer_id_up").style.marginLeft = "0";
+        }
 
       </script>
     
