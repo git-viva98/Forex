@@ -109,11 +109,11 @@ a, a:visited, a:hover {
     @include breakpoint-up(large){
       padding-bottom: 6rem;
     }
-  }
+  
   &--pl {
     padding-left: 1.5rem;
   }
-}
+
 
 // Flexbox
 .flex {
@@ -177,4 +177,4 @@ button, .button {
     display: none;
   }
 }
-
+}
